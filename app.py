@@ -14,7 +14,7 @@ medication=pd.read_csv('dataset/medications.csv')
 diets=pd.read_csv('dataset/diets.csv')
 
 # load model
-svc=pickle.load(open('model/svc.pkl','rb'))
+svc=pickle.load(open('svc.pkl','rb'))
 
 @app.route("/")
 def index():
